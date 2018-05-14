@@ -27,7 +27,7 @@ public class UserController {
     @RequestMapping("userList")
     public List<User> getAllUser(){
         System.out.println("进入controller");
-        logger.error("asdfasdfasdfasdf");
+        logger.debug("asdfasdfasdfasdf");
         return this.userService.selectAllUser();
     }
 

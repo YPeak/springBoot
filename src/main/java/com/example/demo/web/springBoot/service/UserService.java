@@ -10,6 +10,8 @@ import java.util.List;
  * on 2018/5/12.
  */
 public interface UserService {
+
     List<User> selectAllUser();
+
     void deleteUser(Integer id);
 }
