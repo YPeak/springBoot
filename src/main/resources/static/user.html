@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <title>少卿之家</title>
+    <!--<link rel="stylesheet" type="text/css" href="ui/themes/defult/easyui.css">-->
+    <!--<link rel="stylesheet">-->
+    <script type="text/javascript">
+        $(function () {
+            $('#grid').datagrid({
+                url:'user/userList',
+                fit:true,
+                columns:[[
+                    {field:'id',title:'编码',width:50},
+                    {field:'name',title:'姓名',width:50},
+                    {field:'address',title:'地址',width:50}
+                ]]
+            });
+        });
+    </script>
+</head>
+<body>
+<table id="grid">
+
+
+</table>
+
+</body>
+
+</html>
