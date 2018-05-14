@@ -17,7 +17,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
+	@Bean//ActiveMQ的应用
 	public Queue queue(){//不要引用错类
 		return new ActiveMQQueue("active.queue");
 	}
