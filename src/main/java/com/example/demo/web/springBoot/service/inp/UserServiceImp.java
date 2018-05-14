@@ -21,7 +21,13 @@ public class UserServiceImp implements UserService{
     private UserMapper userMapper;
 
     @Override
+//    @Cacheable(value="UserCache",key = "'User.selectUser'")
     public List<User> selectAllUser() {
         return userMapper.selectUser();
+    }
+
+    @Override
+    public void deleteUser(Integer id) {
+        userMapper.deleteUser(id);
     }
 }

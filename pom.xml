@@ -30,11 +30,24 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--Redis的依赖-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-redis</artifactId>
+			<version>1.4.4.RELEASE</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--日志-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+		<!--</dependency>-->
+		<!--数据库-->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
@@ -58,26 +71,26 @@
 		</plugins>
 	</build>
 
-	<plugins>
-		<!-- 1、使用parent，打包： mvn package-->
-		<!-- 2、使用依赖，打包： mvn package spring-boot:repackage -->
-		<plugin>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-maven-plugin</artifactId>
-			<!--允许linux上注册服务-->
-			<configuration>
-				<strong><jvmArguments>
-					-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
-				</jvmArguments></strong>
-				<executable>true</executable>
-			</configuration>
-			<executions>
-				<execution>
-					<goals>
-						<goal>repackage</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
+	<!--<plugins>-->
+		<!--&lt;!&ndash; 1、使用parent，打包： mvn package&ndash;&gt;-->
+		<!--&lt;!&ndash; 2、使用依赖，打包： mvn package spring-boot:repackage &ndash;&gt;-->
+		<!--<plugin>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+			<!--&lt;!&ndash;允许linux上注册服务&ndash;&gt;-->
+			<!--<configuration>-->
+				<!--<strong><jvmArguments>-->
+					<!-- -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005-->
+				<!--</jvmArguments></strong>-->
+				<!--<executable>true</executable>-->
+			<!--</configuration>-->
+			<!--<executions>-->
+				<!--<execution>-->
+					<!--<goals>-->
+						<!--<goal>repackage</goal>-->
+					<!--</goals>-->
+				<!--</execution>-->
+			<!--</executions>-->
+		<!--</plugin>-->
+	<!--</plugins>-->
 </project>

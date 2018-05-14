@@ -1,10 +1,12 @@
 package com.example.demo.web.springBoot.po;
 
+import java.io.Serializable;
+
 /**
  * Created by shuwei.yu.
  * on 2018/5/12.
  */
-public class User {
+public class User implements Serializable{
     private Integer id;
     private String name;
     private String address;
