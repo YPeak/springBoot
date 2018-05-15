@@ -33,11 +33,11 @@
 
 		<!--添加tomcat依赖-->
 		<!--如果需要将项目打包成war包的情况-使其可以在tomcat下正产运行-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
 		<!--添加ActiveMQ依赖-->
 		<dependency>
